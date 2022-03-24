@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- These are for carousel slider-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Owl carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/flag-icons-svg/css/flag-icons.css">
+    <link rel="stylesheet" href="amazon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <header class="navbar-my">
+
+        <div class="nav-belt-my">
+            <div class="logo-my">
+                <a href="#"> <img src="img/amazon.png" alt="amazon" class="amazon-logo-my" id="amazon-logo">
+                    <span id="in-in">.in</span>
+                </a>
+            </div>
+            <a href="#">
+                <div class="address-my">
+                    <div class="loc-log-my">
+                        <i class="bi bi-geo-alt" style="font-size: 20px;color: #959fa9;"></i>
+                    </div>
+                    <div class="location-des-my">
+                        <span style="color:#959fa9;">Deliver to Mohammad</span>
+                        <b><span>New Delhi 110072</span></b>
+                    </div>
+                </div>
+            </a>
+            <div class="quick-search-my">
+                <form action="search-input" class="form-search-my">
+                    <div class="select-cat-my nav-search-my">
+                        <select name="category" id="select-category">
+                            <option value="All">All</option>
+                            <option value="alexa-skills">Alexa Skills</option>
+                            <option value="amazon-devices">Amazon Devices</option>
+                            <option value="fashion">Amazon Fashion</option>
+                            <option value="nowstore">Amazon Fresh</option>
+                            <option value="amazon-pharmacy">Amazon Pharmacy</option>
+                            <option value="appliances">Appliances</option>
+                            <option value="mobile-apps">Apps &amp; Games</option>
+                            <option value="baby">Baby</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="stripbooks">Books</option>
+                            <option value="automotive">Car &amp; Motorbike</option>
+                            <option value="apparel">Clothing &amp; Accessories</option>
+                            <option value="collectibles">Collectibles</option>
+                            <option value="computers">Computers &amp; Accessories</option>
+                            <option value="todays-deals">Deals</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="furniture">Furniture</option>
+                            <option value="lawngarden">Garden &amp; Outdoors</option>
+                            <option value="gift-cards">Gift Cards</option>
+                            <option value="grocery">Grocery &amp; Gourmet Foods</option>
+                            <option value="hpc">Health &amp; Personal Care</option>
+                            <option value="kitchen">Home &amp; Kitchen</option>
+                            <option value="industrial">Industrial &amp; Scientific</option>
+                            <option value="jewelry">Jewellery</option>
+                            <option value="digital-text">Kindle Store</option>
+                            <option value="luggage">Luggage &amp; Bags</option>
+                            <option value="luxury-beauty">Luxury Beauty</option>
+                            <option value="dvd">Movies &amp; TV Shows</option>
+                            <option value="popular">Music</option>
+                            <option value="mi">Musical Instruments</option>
+                            <option value="office-products">Office Products</option>
+                            <option value="pets">Pet Supplies</option>
+                            <option value="instant-video">Prime Video</option>
+                            <option value="shoes">Shoes &amp; Handbags</option>
+                            <option value="software">Software</option>
+                            <option value="sporting">Sports, Fitness &amp; Outdoors</option>
+                            <option value="specialty-aps-sns">Subscribe &amp; Save</option>
+                            <option value="home-improvement">Tools &amp; Home Improvement</option>
+                            <option value="toys">Toys &amp; Games</option>
+                            <option value="under-ten-dollars">Under ₹500</option>
+                            <option value="videogames">Video Games</option>
+                            <option value="watches">Watches</option>
+                        </select>
+                    </div>
+                    <div class="input-text-my nav-search-my">
+                        <input type="text">
+                    </div>
+                    <button type="submit" class="search-submit-my"><i class="bi bi-search" style="font-size:23px;"></i></button>
+                </form>
+            </div>
+            <div class="region-my" id="region-country">
+                <a href="#">
+                    <div class="national-flag-my">
+                        <span class="flag-icon flag-icon-in" style="font-size:15px;"></span>
+                        <i class="bi bi-caret-down-fill" style="color: #959fa9;font-size:8px;"></i>
+                    </div>
+                </a>
+                <div class="dropdown-region-lan-menu-my">
+                    <i class="bi bi-caret-up-fill" style="font-size:50px; color:white;position:absolute; top: -30px;left: 113px;"></i>
+                    <div class="language" style="border-bottom: 2px solid rgb(189, 169, 169);">
+                        <input type="radio" name="language" id="English" checked>
+                        <label for="English">English</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Hindi">
+                        <label for="Hindi">Hindi</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Marathi">
+                        <label for="Marathi">Marathi</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Tamil">
+                        <label for="Tamil">Tamil</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Bangoli">
+                        <label for="Bangoli">Bangoli</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="kannad">
+                        <label for="kannad">Kannad</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Urdu">
+                        <label for="Urdu">Urdu</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Arabic">
+                        <label for="Arabic">Arabic</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Malyali">
+                        <label for="Malyali">Malyali</label>
+                    </div>
+                    <div class="language-my" style="border-bottom: 2px solid rgb(189, 169, 169);">
+                        <input type="radio" name="language" id="Gujrati">
+                        <label for="Gujrati">Gujrati</label>
+                    </div>
+                    <div class="change-region-my">
+                        <span class="flag-icon flag-icon-in" style="font-size:15px;"></span> You are shopping at Amazon.in
+                        <p style="margin-top: 20px;margin-left: 10px;">
+                            <a href="#" style="text-decoration:none; color:blue !important;">Change Country/Region</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#">
+                <div class="Accounts-my">
+                    <div class="Greet-my">
+                        <span style="color:#959fa9;">Hello, Mohammad</span>
+                        <b><span>Account & Lists</span></b>
+                    </div>
+                    <i class="bi bi-caret-down-fill" style="color: #959fa9;font-size:8px;"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="order-returns-my">
+                    <p style="color:#959fa9;margin-top: 20px;">Returns</p>
+                    <p style="position:relative; top:-10px;"> <b> & Orders</b></p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="cart-my">
+                    <div class="number-of-items-my">
+                        <b>10</b>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="nav-main-my">
+        </div>
+
+
+    </header>
+    <main>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!-- <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+
+            </ol> -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#">
+                        <img src="https://m.media-amazon.com/images/I/612AqhqwllL._SX3000_.jpg" alt="image" />
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#">
+                        <img src="https://m.media-amazon.com/images/I/61t3c6agR7L._SX3000_.jpg" alt="image" />
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#">
+                        <img src="https://m.media-amazon.com/images/I/71w1B5KhW9L._SX3000_.jpg" alt="image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="https://m.media-amazon.com/images/I/61Z1rt6fM8L._SX3000_.jpg" alt="image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="https://m.media-amazon.com/images/I/610RCu7M6KL._SX3000_.jpg" alt="image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="https://m.media-amazon.com/images/I/61bmZbeiGPL._SX3000_.jpg" alt="image" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Left and right controls -- Never give -ve z index to the element which you want to give anchor tag  -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" style="position: absolute; top: 40%; left: 40px;"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" style="position: absolute; top: 40%; right: 40px;"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="owl-carousel owl-theme" id="display-1">
+            <div class="card-top">
+                <div class="item">
+                    <h4>Keep shopping for</h4>
+                    <div class="keep-shopping-items">
+                        <div class="k-s-i-d">
+                            <a href="#">
+                                <img src="https://m.media-amazon.com/images/I/61YUuxpJ0YL._AC_SY135_.jpg" alt="img">
+                                <p>
+                                    ErgoYou | Manual H...
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="k-s-i-d">
+                            <a href="#">
+                                <img src="https://m.media-amazon.com/images/I/617KKb-r8uL._AC_SY135_.jpg" alt="img">
+                                <p>
+                                    Eureka Ergonom..
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="keep-shopping-items">
+                        <div class="k-s-i-d">
+                            <a href="#">
+                                <img src="https://m.media-amazon.com/images/I/51CR6kmco7L._AC_SY135_.jpg" alt="img">
+                                <p>
+                                    Monarch Elevate H...
+                                </p>
+                            </a>
+                        </div>
+                        <div class="k-s-i-d">
+                            <a href="#">
+                                <img src="https://m.media-amazon.com/images/I/61MJrfIRUiL._AC_SY135_.jpg" alt="img">
+                                <p>
+                                    ErgoYou | Electric H...
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-top">
+                <div class="item">
+                    <h4>Amazon Pay | Pay utility bills fast & conveniently</h4>
+                    <div class="keep-shopping-items-2">
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/Electricity_186x116._SY116_CB646259375_.jpg" alt="img">
+                                <p>
+                                    Electricity Bill
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/LPG_186x116._SY116_CB646259375_.jpg" alt="img">
+                                <p>
+                                    LPG gas cylinder
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="keep-shopping-items-2">
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/Broadband_186x116._SY116_CB646259375_.jpg" alt="img">
+                                <p>
+                                    Broadband bill
+                                </p>
+                            </a>
+                        </div>
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/PCrevised/DTH_186x116._SY116_CB628894454_.jpg" alt="img">
+                                <p>
+                                    DTH Recharge
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="see-more-for-bills" style="margin-top:27px; padding: 8px;;">
+                        <a href="#">
+                            <h5>Explore more from Amazon Pay</h5>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-top">
+                <div class="item">
+                    <h4>Amazon Pay | Pay utility bills fast & conveniently</h4>
+                    <div class="keep-shopping-items-2">
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/Postpaid_186x116._SY116_CB646259375_.jpg" alt="img">
+                                <p>
+                                    Postpaid Bill
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/CCBP_186x116._SY116_CB646259375_.jpg" alt="img">
+                                <p>
+                                    Credit card bill
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="keep-shopping-items-2">
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/GPRC_186x116._SY116_CB646259375_.jpg" alt="img">
+                                <p>
+                                    Google Play recharge
+                                </p>
+                            </a>
+                        </div>
+                        <div class="k-s-i-d-bills">
+                            <a href="#">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/PCrevised/Subscriptions_186x116._SY116_CB628894454_.jpg" alt="img">
+                                <p>
+                                    Pay for subscription
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="see-more-for-bills" style="margin-top:27px; padding: 8px;;">
+                        <a href="#">
+                            <h5>Explore more from Amazon Pay</h5>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-top" id="card-movie">
+                <div class="item">
+                    <img src="https://aax-eu.amazon.in/x/c/QgGSc0s3MRjr9-HFmFRw43wAAAF_uaFhPgMAAAH_ATPwjfE/http://www.amazon.in/gp/slredirect/picassoRedirect.html?ie=UTF8&adId=A0672155VXLL7300GVVD&qualifier=1648086835&id=3973708025319042&widgetName=sd_onsite_desktop&url=%2Fdp%2FB09PL96YJW%2Fref%3Dsyn_sd_onsite_desktop_91%3Fpsc%3D1"
+                        alt="img">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="display-panel-1" style="background-color: white; margin: 10px;">
+            <div>
+                <h2 style="padding: 10px; border-bottom: 2px solid rgb(189, 182, 182);">Today's Deals</h2>
+            </div>
+            <div class="owl-carousel owl-theme" id="display-2">
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41A-ay1ftrL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>403 - <sup>₹</sup>10,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41iHN9Y07cS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>9,900 - <sup>₹</sup>35,990
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/31FeKzJzVOS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>9,490 - <sup>₹</sup>2,10,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/619OOgbDBpS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>403 - <sup>₹</sup>3,847
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41VPAkJ3v-L._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>2,403 - <sup>₹</sup>24,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/31vTfGd8kaL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>1,003 - <sup>₹</sup>4,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/512SMIvhtPL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>339 - <sup>₹</sup>24,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/51Q1tNCJgkS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>539 - <sup>₹</sup>24,077
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/31RK2ukll1L._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>1,403 - <sup>₹</sup>9,877
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41riaxFTrIL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>1,00,403 - <sup>₹</sup>1,99,877
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41u1b7nvPWL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>603 - <sup>₹</sup>1,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/81sy7mdH0mL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>303 - <sup>₹</sup>1,877
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41oUHP4YOiL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>499 - <sup>₹</sup>3,877
+                        </p>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                dots: false,
+                navText: ["<div class='glyphicon glyphicon-chevron-left' style='position: absolute; top: 30%; font-size:30px; left: 20px;'></div>", "<div class='glyphicon glyphicon-chevron-right'  style='position: absolute; top: 30%; font-size:30px; right: 20px;'></div>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusantium nisi ducimus qui totam iusto sunt ut, voluptas odit porro velit, illum autem accusamus laboriosam quibusdam officia rem aliquam eligendi. Officia libero nemo maxime debitis rem
+            ab aliquid, vel dolores consequatur, placeat ipsam eos explicabo tempore neque! Animi illum, quis eum nam itaque facere nulla velit aliquid est cumque iure, provident quam debitis, repellat placeat magnam perferendis mollitia quo molestias
+            commodi. Corporis rem eos est officiis dolorum asperiores quaerat vitae. Reprehenderit, temporibus. Pariatur sit nam dolores perferendis! Eaque cum minima voluptas corporis incidunt sunt consequuntur esse magni fugiat voluptatibus necessitatibus
+            ducimus, commodi sit libero unde impedit amet consequatur est suscipit recusandae? Expedita illo dolore voluptates dignissimos, ab ipsam facilis corrupti culpa commodi a minima reiciendis voluptas ullam? In veniam nemo quibusdam adipisci perferendis,
+            dignissimos officia magni excepturi rerum illum laudantium sapiente nam error voluptatem, molestias nesciunt voluptates eos quia ut cumque cupiditate quisquam, delectus deleniti nihil! Exercitationem quas cumque iure molestiae hic suscipit
+            voluptatum iste maiores, possimus, est odit eveniet tempore reiciendis repudiandae placeat magnam laborum aperiam, numquam illo quaerat veniam. Odio natus minima, dolore ducimus quis aut quasi sequi sunt eveniet ratione, quia eius deserunt
+            quae nam reiciendis aperiam ullam rem. Harum, quam nihil quis natus ab pariatur fugiat quas quasi sit sunt hic impedit deleniti rem exercitationem dolorem id qui voluptatem minus. Id quo similique vero, fugiat nihil dolor mollitia magnam ducimus
+            ea officia amet dolorem veritatis doloremque recusandae distinctio necessitatibus tempore maxime, numquam perspiciatis nam. Numquam, nemo! Possimus dicta quod minima maiores, ex perspiciatis consequuntur dolore fugiat ipsum eos praesentium
+            numquam, repudiandae commodi mollitia corrupti sequi omnis facilis ipsa, at fugit sit quas nihil. Earum in cumque officia? Reprehenderit omnis maiores fuga magnam. Exercitationem eum quidem eius commodi, consectetur accusantium enim unde,
+            odit dignissimos delectus molestias sequi ad non doloribus ex magnam nemo culpa rem hic harum! Explicabo cumque earum inventore dolorem. Amet, consequuntur ab itaque veniam aut optio unde expedita asperiores delectus maxime non, ipsum distinctio
+            at ratione, suscipit debitis consequatur sapiente! Quibusdam incidunt perspiciatis accusamus deleniti, non architecto accusantium perferendis id error tenetur est quod dolore nulla iste neque libero dolores. Dolorem nemo assumenda culpa cum
+            ut, magni consectetur libero doloremque deserunt odio modi tempora sit quidem dicta itaque? Debitis aperiam libero mollitia in labore, eos modi expedita autem ipsam beatae officiis quam aliquid officia ipsa odit voluptas nesciunt recusandae
+            adipisci dolores non nisi dolorem! Quo deserunt explicabo inventore blanditiis cumque veritatis quam quidem aut provident harum voluptas eos voluptatem saepe neque est, iste, possimus ipsa, culpa itaque veniam totam dolore! Tempora officiis
+            repellat doloribus veniam blanditiis sint architecto quia. Adipisci excepturi consequatur perspiciatis reiciendis perferendis, numquam repellendus! Impedit corrupti veritatis mollitia dolores et fugiat?
+        </div>
+    </main>
+
+</body>
+
+</html>
