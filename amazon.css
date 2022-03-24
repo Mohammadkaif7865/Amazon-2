@@ -25,6 +25,9 @@ body {
     position: fixed;
     background-color: #131921;
     z-index: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .logo-my {
@@ -248,6 +251,7 @@ input[type=radio] {
     padding: 10px;
     max-height: 380px;
     min-height: 380px;
+    text-align: center;
 }
 
 #display-1 .item {
@@ -319,14 +323,54 @@ input[type=radio] {
     max-height: 275px;
 }
 
+.offer-segment {
+    background-color: white;
+    height: 380px;
+    width: 406px;
+    padding: 10px;
+}
+
 @media screen and (max-width:836px) {
     #myCarousel {
         max-height: 150px;
     }
 }
 
+@media screen and (max-width:436px) {
+    .logo-my {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .address-my {
+        display: none;
+    }
+    .Accounts-my {
+        display: none;
+    }
+    .region-my {
+        display: none;
+    }
+    .order-returns-my {
+        display: none;
+    }
+    .logo-my {
+        display: none;
+    }
+    .quick-search-my {
+        width: 90%;
+    }
+}
+
 @media screen and (min-width:1306px) {
     #myCarousel {
         max-height: 350px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #top-menu {
+        display: none;
     }
 }
