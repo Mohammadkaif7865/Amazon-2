@@ -330,6 +330,85 @@ input[type=radio] {
     padding: 10px;
 }
 
+.goto-top {
+    display: flex;
+    background-color: #37475a;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-three-parts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: white;
+    background-color: #232f3e;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.foot-parts {
+    text-align: left;
+    padding: 10px;
+}
+
+.foot-parts p {
+    color: #959fa9;
+}
+
+.country-avail {
+    display: block;
+}
+
+.amazon-country {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #232f3e;
+}
+
+.country-avail img {
+    height: 40px;
+    width: 100px;
+}
+
+.language-select {
+    border: 1px solid rgb(194, 188, 188);
+    border-radius: 3px;
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    color: rgb(162, 160, 160);
+}
+
+.countries {
+    padding: 10px;
+    text-align: center;
+    background-color: #232f3e;
+    font-size: 10px;
+    ;
+}
+
+.countries a {
+    color: #959fa9;
+}
+
+.country-name {
+    display: inline-block;
+    margin: 4px;
+}
+
 @media screen and (max-width:836px) {
     #myCarousel {
         max-height: 150px;
