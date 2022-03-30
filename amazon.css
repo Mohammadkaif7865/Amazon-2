@@ -409,6 +409,23 @@ input[type=radio] {
     margin: 4px;
 }
 
+.last-foot {
+    background-color: #131921;
+    font-size: 12px;
+    text-align: center;
+    color: #959fa9;
+    padding: 10px;
+}
+
+.last-foot-child {
+    display: inline-block;
+    margin: 4px;
+}
+
+.last-foot a {
+    color: #959fa9;
+}
+
 @media screen and (max-width:836px) {
     #myCarousel {
         max-height: 150px;
@@ -449,7 +466,7 @@ input[type=radio] {
 }
 
 @media screen and (min-width:1000px) {
-    #top-menu {
+    #po-po {
         display: none;
     }
 }
