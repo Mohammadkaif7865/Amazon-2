@@ -45,8 +45,11 @@ body {
     padding: 5px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .navbar-my a {
-    text-decoration: none !important;
     color: white !important;
 }
 
@@ -281,7 +284,6 @@ input[type=radio] {
 }
 
 .k-s-i-d a {
-    text-decoration: none;
     color: black;
 }
 
@@ -310,7 +312,6 @@ input[type=radio] {
 }
 
 .k-s-i-d-bills a {
-    text-decoration: none;
     color: black;
 }
 
