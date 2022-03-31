@@ -338,6 +338,7 @@ input[type=radio] {
     color: white;
     justify-content: center;
     align-items: center;
+    height: 50px;
 }
 
 .foot-three-parts {
