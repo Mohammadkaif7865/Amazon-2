@@ -228,7 +228,7 @@
     .scroller {
         display: flex;
         width: 100%;
-        height: 210px;
+        height: 200px;
         position: relative;
         z-index: 3;
         padding: 5px;
@@ -243,7 +243,8 @@
     /* width */
     
     .scroller::-webkit-scrollbar {
-        width: 10px;
+        width: 1em;
+        display: none;
     }
     /* Track */
     
@@ -300,6 +301,28 @@
         z-index: 3;
     }
     
+    .car-me {
+        background: white;
+        margin: 5px;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .car-me h2 {
+        padding: 10px;
+    }
+    
+    .item {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
     .scroll-items img {
         width: 100%;
         max-width: 150px;
@@ -309,6 +332,7 @@
     
     .scroll-items-type-full img {
         width: 100%;
+        height: 100%;
         max-width: 150px;
         min-height: 200px;
         object-fit: cover;
