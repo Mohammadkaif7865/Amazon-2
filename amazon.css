@@ -24,7 +24,7 @@
         height: 60px;
         position: fixed;
         background-color: #131921;
-        z-index: 2;
+        z-index: 9999;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
@@ -73,12 +73,12 @@
     }
     
     .loc-log-my {
-        padding-top: 25px;
+        padding-top: 15px;
         margin-right: 2px;
     }
     
     .location-des-my {
-        padding-top: 20px;
+        padding-top: 5px;
     }
     
     .quick-search-my {
@@ -127,7 +127,6 @@
         border-top-right-radius: 15%;
         border-bottom-right-radius: 15%;
         cursor: pointer;
-        padding: 6px;
     }
     
     .region-my {
@@ -158,9 +157,9 @@
     }
     
     #in-in {
-        position: relative !important;
-        top: 2px !important;
-        left: -9px !important;
+        position: relative;
+        top: 2px;
+        left: -9px;
     }
     
     .dropdown-region-lan-menu-my input {
@@ -212,33 +211,75 @@
     .cart-my {
         min-width: 70px;
         height: 40px;
+        font-size: 30px;
         margin-top: 10px;
         margin-bottom: 10px;
-        background-image: url("https://i.ibb.co/xSsVnh2/cart.png");
-        background-size: 72px 90px, contain;
+        position: relative;
+    }
+    
+    .nn-kk {
+        position: absolute;
+        top: 0px;
+        left: 12px;
+        z-index: 2;
     }
     
     .number-of-items-my {
         margin-left: 20px;
         color: orange;
         margin-top: 6px;
+        position: relative;
+        z-index: 3;
     }
     /* Main css*/
+    
+    main a {
+        color: black;
+    }
+    
+    main a:hover {
+        color: black;
+    }
+    
+    .scroller-navigation {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        z-index: 3;
+    }
     
     .scroller {
         display: flex;
         width: 100%;
         height: 200px;
         position: relative;
-        z-index: 3;
+        z-index: 1;
         padding: 5px;
         overflow-x: auto;
         overflow-y: hidden;
-        scrollbar-width: thin;
     }
     
-    .scroller a {
-        color: black;
+    #scroll-nav-right {
+        font-size: 30px;
+        background-color: white;
+        position: absolute;
+        z-index: 3;
+        top: 70px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        right: 0;
+    }
+    
+    #scroll-nav-left {
+        font-size: 30px;
+        display: none;
+        background-color: white;
+        position: absolute;
+        z-index: 3;
+        top: 70px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        left: 0;
     }
     /* width */
     
@@ -298,7 +339,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 3;
+        z-index: 1;
     }
     
     .car-me {
@@ -500,6 +541,45 @@
         font-size: 30px;
     }
     
+    .card-container {
+        display: grid;
+        grid-template-areas: 'one two three four';
+    }
+    
+    .card-type-one {
+        grid-area: one;
+    }
+    
+    .card-type-two {
+        grid-area: two;
+    }
+    
+    .card-type-three {
+        grid-area: three;
+    }
+    
+    .card-type-four {
+        grid-area: four;
+    }
+    
+    @media screen and (max-width:436px) {
+        .logo-my {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .card-container {
+            grid-template-areas: 'one' 'two' 'three' 'four';
+        }
+    }
+    
+    @media screen and (min-width:600px) {
+        .card-container {
+            grid-template-areas: 'one two' 'three four';
+        }
+    }
+    
     @media screen and (max-width: 836px) {
         #myCarousel {
             max-height: 150px;
@@ -509,12 +589,6 @@
     @media screen and (min-width: 836px) {
         #myCarousel {
             max-height: 200px;
-        }
-    }
-    
-    @media screen and (max-width:436px) {
-        .logo-my {
-            display: none;
         }
     }
     
@@ -545,6 +619,9 @@
         }
         #myCarousel {
             max-height: 200px;
+        }
+        .card-container {
+            grid-template-areas: 'one two three four';
         }
     }
     
