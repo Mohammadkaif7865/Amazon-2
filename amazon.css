@@ -543,6 +543,8 @@
     
     .card-container {
         display: grid;
+        gap: 20px;
+        padding: 10px;
         grid-template-areas: 'one two three four';
     }
     
@@ -560,6 +562,99 @@
     
     .card-type-four {
         grid-area: four;
+    }
+    
+    .my-card {
+        display: grid;
+        grid-template-areas: 'oo tt' 'th fo';
+        padding: 10px;
+        gap: 10px;
+        background-color: white;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        position: relative;
+    }
+    
+    .card-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .card-item-title {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    .fit-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-bottom: 30px;
+    }
+    
+    .im1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-area: oo;
+    }
+    
+    .im2 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-area: tt;
+    }
+    
+    .im3 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-area: th;
+    }
+    
+    .im4 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-area: fo;
+    }
+    
+    .see-more {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        color: rgb(67, 67, 194);
+    }
+    
+    .image-show-case-two {
+        display: grid;
+        grid-template-areas: 'one' 'two';
+    }
+    
+    .half-image-1 {
+        grid-area: one;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .show-case-one {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .full-image-1 {
+        width: 100%;
+        height: 100%;
     }
     
     @media screen and (max-width:436px) {
@@ -589,6 +684,9 @@
     @media screen and (min-width: 836px) {
         #myCarousel {
             max-height: 200px;
+        }
+        .image-show-case-two {
+            grid-template-areas: 'one two';
         }
     }
     
@@ -622,6 +720,9 @@
         }
         .card-container {
             grid-template-areas: 'one two three four';
+        }
+        .scroller-navigation {
+            display: none;
         }
     }
     
