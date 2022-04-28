@@ -32,14 +32,14 @@
 </style>
 
 <body>
-    <div class="coupon-container">
+    <!-- <div class="coupon-container">
         <div class="coupon" id="coupon">
             <video autoplay muted loop id="myVideo" width="100%" height="100%">
                 <source src="amazon.mp4" type="video/mp4">
             </video>
             <button type="button" class="edit-button" onclick="close_coupon();"><i class="bi bi-x-lg"></i></button>
         </div>
-    </div>
+    </div> -->
     <header class="navbar-my">
 
         <div class="nav-belt-my">
@@ -161,7 +161,7 @@
             <div class="region-my" id="region-country">
                 <a href="#">
                     <div class="national-flag-my">
-                        <i class="bi bi-flag-fill" style="font-size:15px;"></i>
+                        <span class="flag-icon flag-icon-in" style="font-size:15px;"></span>
                         <i class="bi bi-caret-down-fill" style="color: #959fa9;font-size:8px;"></i>
                     </div>
                 </a>
@@ -208,7 +208,7 @@
                         <label for="Gujrati">Gujrati</label>
                     </div>
                     <div class="change-region-my">
-                        <i class="bi bi-flag-fill" style="font-size:15px; color:black;"></i> You are shopping at Amazon.in
+                        <span class="flag-icon flag-icon-in" style="font-size:15px;"></span> You are shopping at Amazon.in
                         <p style="margin-top: 20px;margin-left: 10px;">
                             <a href="#" style="text-decoration:none; color:blue !important;">Change Country/Region</a>
                         </p>
@@ -242,7 +242,67 @@
         </div>
         <div class="nav-main-my">
             <a href="#">
-                <i class="bi bi-funnel-fill" style="font-size:22px;" class="main-belt-item">Filter</i>
+                <div class="main-belt-item" style="margin-left: 5px;">
+                    <i class="bi bi-funnel-fill" style="font-size:22px;"></i> Filter
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    All
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Fresh
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Coupon
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Amazon Pay
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Browsing History <i class="bi bi-caret-down-fill"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Pet Supplies
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Prime <i class="bi bi-caret-down-fill"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Mobiles
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Buy Again
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Gift Ideas
+                </div>
+            </a>
+            <a href="#">
+                <div class="main-belt-item">
+                    Gift Cards
+                </div>
+            </a>
+            <a href="#">
+                <img src="https://i.ibb.co/RbjbNRx/nav-img.jpg" alt="img" class="nav-image">
             </a>
         </div>
 
@@ -388,91 +448,95 @@
             </a>
         </div>
         <div class="car-me">
-            <h2><b>More top picks for you</b></h2>
+            <h2><b>Today’s Deals</b></h2>
             <div class="owl-carousel owl-theme car-me" id="display-item-1">
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/b3TXr4s/ipone.jpg" alt="img">
+                        <img src="https://i.ibb.co/b3TXr4s/ipone.jpg" alt="img" class="partial-screen-car-img">
+                        <p>₹9,990 - ₹35,990
+                            <span id="demo-2"></span>
+                        </p>
+
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/M5T6gfd/ipad.jpg" alt="img">
+                        <img src="https://i.ibb.co/M5T6gfd/ipad.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/44Kc2cF/w2.jpg" alt="img">
+                        <img src="https://i.ibb.co/44Kc2cF/w2.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/R9xfXzk/ipod.jpg" alt="img">
+                        <img src="https://i.ibb.co/R9xfXzk/ipod.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/xFR2fGB/kyborad.jpg" alt="img">
+                        <img src="https://i.ibb.co/xFR2fGB/kyborad.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/nb2X9xs/charger.jpg" alt="img">
+                        <img src="https://i.ibb.co/nb2X9xs/charger.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/whCsNbz/zit1.jpg" alt="img">
+                        <img src="https://i.ibb.co/whCsNbz/zit1.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/cNvK3fq/zit2.jpg" alt="img">
+                        <img src="https://i.ibb.co/cNvK3fq/zit2.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/2h8D1qy/z3.jpg" alt="img">
+                        <img src="https://i.ibb.co/2h8D1qy/z3.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/fY2btW9/z4.jpg" alt="img">
+                        <img src="https://i.ibb.co/fY2btW9/z4.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/0YbwvjD/z5.jpg" alt="img">
+                        <img src="https://i.ibb.co/0YbwvjD/z5.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/TMP50Tx/z8.jpg" alt="img">
+                        <img src="https://i.ibb.co/TMP50Tx/z8.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/LpdLXJY/z10.jpg" alt="img">
+                        <img src="https://i.ibb.co/LpdLXJY/z10.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/PWwc1Kt/watches.jpg" alt="img">
+                        <img src="https://i.ibb.co/PWwc1Kt/watches.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/c3hy8xM/laptop.jpg" alt="img">
+                        <img src="https://i.ibb.co/c3hy8xM/laptop.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/7QPs9KN/z6.jpg" alt="img">
+                        <img src="https://i.ibb.co/7QPs9KN/z6.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
-                <div class="item">
+                <div class="item increase-carousel-h">
                     <a href="#">
-                        <img src="https://i.ibb.co/hfJFJCd/coverpink.jpg" alt="img">
+                        <img src="https://i.ibb.co/hfJFJCd/coverpink.jpg" alt="img" class="partial-screen-car-img">
                     </a>
                 </div>
             </div>
@@ -665,6 +729,122 @@
                 <img src="https://i.ibb.co/FKBBbc1/half2.jpg" alt="img" class="half-image-1">
             </a>
         </div>
+        <div class="car-me">
+            <h2><b>More top picks for you</b></h2>
+            <div class="owl-carousel owl-theme car-me" id="display-item-1">
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/b3TXr4s/ipone.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/M5T6gfd/ipad.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/44Kc2cF/w2.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/R9xfXzk/ipod.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/xFR2fGB/kyborad.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/nb2X9xs/charger.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/whCsNbz/zit1.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/cNvK3fq/zit2.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/2h8D1qy/z3.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/fY2btW9/z4.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/0YbwvjD/z5.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/TMP50Tx/z8.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/LpdLXJY/z10.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/PWwc1Kt/watches.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/c3hy8xM/laptop.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/7QPs9KN/z6.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+                <div class="item normal-carousel-h">
+                    <a href="#">
+                        <img src="https://i.ibb.co/hfJFJCd/coverpink.jpg" alt="img" class="full-screen-car-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                dots: false,
+                navText: [`<i class="bi bi-chevron-left" style='background-color:white; border-radius: 10px;position: absolute; height: 80px; width: 50px;top: 30%; font-size:40px; padding-top: 10px; left: 0px; color:black; border: 2px solid  rgb(207, 210, 213); '></i>`, `<i class="bi bi-chevron-right" style='background-color:white; border-radius: 10px;position: absolute; height: 80px; width: 50px;top: 30%; font-size:40px; padding-top: 10px; right: 0px; color:black; border: 2px solid  rgb(207, 210, 213); '></i>`],
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    800: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 5
+                    },
+                    1200: {
+                        items: 6
+                    },
+                }
+            })
+        </script>
         <div class="show-case-one">
             <a href="#">
                 <img src="https://i.ibb.co/XjqmynB/long2.jpg" alt="img" class="full-image-1">

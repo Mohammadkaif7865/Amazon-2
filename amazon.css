@@ -63,23 +63,18 @@
         position: absolute;
         padding: 5px;
         top: 60px;
-        overflow-x: hidden;
-        background-color: #232f3e;
-    }
-    
-    .scroller {
-        display: flex;
-        width: 100%;
-        height: 200px;
-        position: relative;
-        z-index: 1;
-        padding: 5px;
         overflow-x: auto;
         overflow-y: hidden;
+        background-color: #232f3e;
     }
     
     .nav-main-my::-webkit-scrollbar {
         display: none;
+    }
+    
+    .nav-image {
+        height: 100%;
+        margin-left: 185px;
     }
     
     .main-belt-item {
@@ -87,7 +82,11 @@
         font-size: 15px;
         margin-left: 15px;
         display: flex;
+        align-items: center;
+        white-space: nowrap;
         flex-wrap: nowrap;
+        position: relative;
+        z-index: 3;
     }
     
     .address-my {
@@ -380,12 +379,41 @@
         padding: 10px;
     }
     
-    .item {
+    .increase-carousel-h {
+        height: 225px;
+        width: 200px;
+    }
+    
+    .partial-screen-car-img {
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+    
+    .increase-carousel-h p {
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        padding: 5px;
+        font-size: 15px;
+        position: relative;
+    }
+    
+    #demo-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .normal-carousel-h {
         height: 200px;
         width: 200px;
     }
     
-    .item img {
+    .full-screen-car-img {
         width: 100%;
         height: 100%;
         object-fit: contain;
