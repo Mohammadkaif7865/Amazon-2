@@ -74,7 +74,7 @@
     
     .nav-image {
         height: 100%;
-        margin-left: 185px;
+        margin-left: 190px;
     }
     
     .main-belt-item {
@@ -567,13 +567,24 @@
         position: fixed;
         z-index: 5;
         width: 100%;
-        top: 10vh;
+        top: 15vh;
         left: 0;
     }
     
+    .coupon-big-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        background-color: black;
+        opacity: 0.6;
+        width: 100vw;
+        height: 100vh;
+    }
+    
     .coupon {
-        width: 80vw;
-        height: 60vw;
+        width: 60vw;
+        height: 45vw;
         max-width: 800px;
         max-height: 600px;
         margin: auto;

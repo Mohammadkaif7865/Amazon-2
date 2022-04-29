@@ -1,5 +1,6 @@
 function close_coupon() {
     document.getElementById("coupon").style.display = "none";
+    document.getElementById("coupon-2").style.display = "none";
 }
 
 function hide_me_right() {
