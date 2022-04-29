@@ -399,7 +399,7 @@
         position: relative;
     }
     
-    #demo-2 {
+    .demo-2 {
         position: absolute;
         bottom: 0;
         left: 0;
