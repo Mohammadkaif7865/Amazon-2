@@ -49,3 +49,11 @@ var x = setInterval(function() {
         }
     }
 }, 1000);
+
+function change_the(x) {
+    let m = document.getElementsByClassName('array-class-me');
+    for (var i = 0, len = m.length; i < len; i++) {
+        m[i].style.display = 'none';
+    }
+    document.getElementById(`pic-swap-${x}`).style.display = "block";
+}
