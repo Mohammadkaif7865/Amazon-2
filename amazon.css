@@ -472,6 +472,7 @@
         background-color: #232f3e;
         padding: 10px;
         border-bottom: 1px solid grey;
+        font-size: calc(8px + 0.5vw);
     }
     
     .foot-parts {
@@ -508,6 +509,7 @@
         height: 40px;
         width: 150px;
         padding: 5px;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -530,6 +532,11 @@
     .country-name {
         display: inline-block;
         margin: 4px;
+    }
+    
+    .foot-sub-head {
+        font-size: calc(8px + 0.8vw);
+        color: white !important;
     }
     
     .last-foot {
@@ -697,7 +704,7 @@
     
     .get-part-2 {
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
     }
     
     .price-in-part-2 {
