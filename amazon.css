@@ -160,6 +160,7 @@
         height: 40px;
         margin-top: 10px;
         margin-bottom: 10px;
+        position: relative;
         margin-left: 10px;
         flex-direction: column;
         display: flex;
@@ -171,15 +172,14 @@
         display: none;
         background-color: white;
         height: 450px;
-        /* border: 5px solid red; */
         width: 250px;
         position: absolute;
-        top: 50px;
+        top: 40px;
+        left: 0px;
         text-align: left;
         padding: 10px;
         border-radius: 10px;
         font-size: 12px;
-        /* overflow: scroll; */
     }
     
     #in-in {
@@ -192,8 +192,8 @@
         margin: 5px;
     }
     
-    .dropdown-region-lan-menu-my label:hover {
-        text-shadow: 5px 5px 5px gold;
+    .dropdown-region-lan-menu-my label {
+        cursor: pointer;
     }
     
     .region-my:hover .dropdown-region-lan-menu-my {
@@ -489,6 +489,10 @@
         background-color: #232f3e;
     }
     
+    .country-avail a {
+        color: #959fa9;
+    }
+    
     .amazon-country {
         display: flex;
         flex-direction: row;
@@ -499,7 +503,7 @@
         background-color: #232f3e;
     }
     
-    .country-avail img {
+    .amazon-image-me {
         height: 40px;
         width: 100px;
     }
@@ -511,12 +515,32 @@
         width: 150px;
         padding: 5px;
         font-size: 20px;
+        position: relative;
         display: flex;
         flex-direction: row;
         align-items: center;
         align-content: center;
         justify-content: space-evenly;
         color: rgb(162, 160, 160);
+    }
+    
+    .language-select:hover .dropdown-region-lan-menu-my-2 {
+        display: block;
+    }
+    
+    .dropdown-region-lan-menu-my-2 {
+        display: none;
+        background-color: white;
+        height: 450px;
+        width: 250px;
+        z-index: 2;
+        position: absolute;
+        top: -455px;
+        left: -100px;
+        text-align: left;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
     }
     
     .countries {
