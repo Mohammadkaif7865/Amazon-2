@@ -34,7 +34,7 @@
 </style>
 
 <body>
-    <div class="coupon-container" id="coupon">
+    <!-- <div class="coupon-container" id="coupon">
         <div class="coupon">
             <video autoplay muted loop id="myVideo" width="100%" height="100%">
                 <source src="amazon.mp4" type="video/mp4">
@@ -43,24 +43,26 @@
         </div>
     </div>
     <div class="coupon-big-container" id="coupon-2">
-    </div>
+    </div> -->
     <div class="day-n-night" type="button" onclick="change_mode();">
         <i class="bi bi-brightness-high-fill" id="change-mode"></i>
     </div>
     <header class="navbar-my">
 
         <div class="nav-belt-my">
-            <button class="btn btn-primary" id="po-po" style=" border:2px solid #131921;  background-color: #131921;" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                <i class="fa fa-bars" style="font-size:32px; margin: 5px;"></i>
+            <button id="po-po" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <i class="bi bi-list" style="font-size:32px; margin: 5px;"></i>
               </button>
-            <div class="offcanvas offcanvas-start" id="demo" style="width: 70vw;">
+            <div class="offcanvas offcanvas-start" id="demo" style="width: 70vw;" data-bs-scroll="true" tabindex="-1">
                 <div class="offcanvas-header" style="  background-color: #232f3e;display: flex; justify-content: right;">
                     <div class="off-cav-head" style="padding:10px; margin:10px;font-size:30px;">
                         <a href="#">
                             <span>Hi! Mohammad <i class="bi bi-person-circle"></i></span>
                         </a>
                     </div>
-                    <button type="button" class="btn-close" style="font-size:30px;position: relative; left:40px;" data-bs-dismiss="offcanvas"></button>
+                    <button type="button" id="cancel-offcanvas" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
                 </div>
                 <div class="hl-hl" style="color: white; padding:10px;  background-color: #232f3e;">
                     <h2><b>Browse</b></h2>

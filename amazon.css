@@ -30,6 +30,21 @@
         justify-content: space-evenly;
     }
     
+    #po-po {
+        border: 2px solid #131921;
+        background-color: #131921;
+        color: white;
+    }
+    
+    #cancel-offcanvas {
+        font-size: 50px;
+        position: relative;
+        left: 60px;
+        border: 2px solid transparent;
+        color: white;
+        background: transparent;
+    }
+    
     .logo-my {
         height: 100%;
         min-width: 150px;
