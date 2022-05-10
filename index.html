@@ -34,7 +34,7 @@
 </style>
 
 <body>
-    <div class="coupon-container" id="coupon">
+    <!-- <div class="coupon-container" id="coupon">
         <div class="coupon">
             <video autoplay muted loop id="myVideo" width="100%" height="100%">
                 <source src="amazon.mp4" type="video/mp4">
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="coupon-big-container" id="coupon-2">
-    </div>
+    </div> -->
     <div class="day-n-night" type="button" onclick="change_mode();">
         <i class="bi bi-brightness-high-fill" id="change-mode"></i>
     </div>
@@ -101,15 +101,16 @@
                     <span id="in-in">.in</span>
                 </a>
             </div>
-            <a href="#">
+            <a href="#" style="display: contents;">
                 <div class="address-my">
-                    <div class="loc-log-my">
-                        <i class="bi bi-geo-alt" style="font-size: 20px;color: #959fa9;"></i>
+
+                    <div id="imG-container">
+                        <img src="" alt="" id="imG">
                     </div>
-                    <div class="location-des-my">
-                        <span style="color:#959fa9;">Deliver to Mohammad</span>
-                        <b><span>New Delhi 110072</span></b>
-                    </div>
+                    <span id="temperature-here"><span class="temp-display"></span>&deg; C</span>
+
+                    <span id="address-me"><span class="temp-display"></span> <i class="bi bi-geo-alt-fill"></i></span>
+
                 </div>
             </a>
             <div class="quick-search-my">
